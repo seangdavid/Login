@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box login" id="login">
+        
+        <form id="login-form" action="index.php " method="post" class="form-container sign-in">
+          <h1>Login</h1>
+          <!-- email -->
+           <div class="input-box">
+            <input
+            type="email"
+            id="email"
+            placeholder="Email"
+          />
+            <i class='bx bxs-envelope'></i>
+           </div>
+          <!-- password -->
+          <div class="input-box">
+              <input type="password" id="password" minlength="8" placeholder="Password"/>
+              <i id="showPassword" class="fa-solid fa-lock-open"></i>
+              <i id="hidePassword" class="fa-solid fa-lock"></i>
+          </div>
+          <div class="check" >
+            <div>
+              <input type="checkbox" id="checkBox">
+              <label for="checkBox">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-apple fa-xl"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="toggle-box">
+        <div class="toggle-panel">
+          <h1>Hello, Welcome!</h1>
+          <p>Don't have an account?</p>
+          <button class="btn register-btn" id="registerBtn" onclick="clearForm()">Register</button>
+        </div>
+      </div>
+
+      <div class="form-box register" id="register">
+        
+        <form id="register-form" action="index.php " method="post" class="form-container sign-in">
+          <h1>Register</h1>
+          <!-- username -->
+          <div class="input-box">
+            <input
+            type="text"
+            id="userName"
+            placeholder="Username"
+          />
+          <i class='bx bxs-user' ></i>
+          </div>
+          <!-- email -->
+          <div class="input-box">
+            <input
+            type="email"
+            id="regi-email"
+            placeholder="Email"
+          />
+            <i class='bx bxs-envelope'></i>
+          </div>
+          <!-- password -->
+          <div class="input-box">
+            <input type="password" id="regi-password" minlength="8" placeholder="Password"/>
+            <i id="regi-showPassword" class="fa-solid fa-lock-open"></i>
+            <i id="regi-hidePassword" class="fa-solid fa-lock"></i>
+          </div>
+          <div class="check regi-check" >
+            <div>
+              <input type="checkbox" id="checkBox">
+              <label for="checkBox">I accept the <a href="condition.html">term and conditions</a></label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <p>or register with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-apple fa-xl"></i></a>
+          </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

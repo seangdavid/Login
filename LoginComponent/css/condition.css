@@ -1,0 +1,60 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(90deg, white, lightblue);
+}
+
+.terms-container {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #777;
+}
+
+a {
+  color: #797ef6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.agree-box {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #797ef6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button a {
+  color: white;
+}
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}

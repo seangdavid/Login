@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/condition.css" />
+    <title>conditions</title>
+  </head>
+  <body>
+    <div class="terms-container">
+      <h1>Terms & Conditions</h1>
+      <p>Last updated: March 2025</p>
+
+      <h2>1. Welcome to Café Delight ☕</h2>
+      <p>
+        By visiting our café or using our online services, you agree to these
+        terms.
+      </p>
+
+      <h2>2. Ordering & Payments</h2>
+      <p>
+        All orders placed online must be paid in full before processing. We
+        accept credit/debit cards and digital wallets.
+      </p>
+
+      <h2>3. Refund & Cancellation Policy</h2>
+      <p>
+        Orders canceled within 10 minutes of placement are eligible for a full
+        refund. No refunds for consumed or partially consumed items.
+      </p>
+
+      <h2>4. Loyalty Program</h2>
+      <p>
+        Earn points with every purchase. Points cannot be exchanged for cash and
+        expire after 6 months.
+      </p>
+
+      <h2>5. Privacy & Data Usage</h2>
+      <p>
+        We respect your privacy. Your personal data will not be shared. Read our
+        <a href="privacy.html">Privacy Policy</a>.
+      </p>
+
+      <h2>6. Changes to Terms</h2>
+      <p>We may update these terms anytime. Please check back for updates.</p>
+
+      <div class="agree-box">
+        <label>
+          <input type="checkbox" id="agree" /> I agree to the Terms & Conditions
+        </label>
+        <button id="continue-btn" disabled>Accept & Continue</button>
+      </div>
+    </div>
+    <script>
+      const agreeCheckbox = document.getElementById("agree");
+      const continueBtn = document.getElementById("continue-btn");
+
+      agreeCheckbox.addEventListener("change", function () {
+        continueBtn.disabled = !agreeCheckbox.checked;
+      });
+      continueBtn.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
